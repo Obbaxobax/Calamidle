@@ -1,5 +1,5 @@
 import { BASENUMBER, M, A } from "$env/static/private"
-import weapons from "./src/lib/data/weapons.json"
+import weapons from "$lib/data/weapons.json"
 
 export async function load({fetch}){
     const c = parseInt(BASENUMBER) / 1000
