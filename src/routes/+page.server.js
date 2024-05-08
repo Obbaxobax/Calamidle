@@ -1,7 +1,7 @@
 import { BASENUMBER, MNUMBER, ANUMBER } from "$env/static/private"
 import weapons from "$lib/data/weapons.json"
 
-export async function load({fetch}){
+export async function load(){
     const c = parseInt(BASENUMBER) / 1000
     const day = Math.round(Date.now() / 86400000)
     let num = ((day * parseFloat(ANUMBER) + c) % parseFloat(MNUMBER))
