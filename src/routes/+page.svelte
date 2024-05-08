@@ -1,7 +1,7 @@
 <script lang="ts">
-    export let data;
-
+    import { onMount } from "svelte";
     import { fade, scale, slide } from "svelte/transition"
+    export let data;
 
     let input: String = ""
     let gameCompleted: boolean = false
@@ -106,9 +106,19 @@
             input = ""
             submittedWeapons = [correctWeapon.name, ...submittedWeapons]
         }
+
+        localStorage.setItem("submittedWeapons", JSON.stringify(submittedWeapons))
     }
 
     function activateHint(hint: string, tries: number){
+        if(gameCompleted == true && activeHint != hint){
+            activeHint = hint
+            return
+        }
+        else if(gameCompleted == true && activeHint == hint){
+            activeHint = ""
+            return
+        }
 
         if(submittedWeapons.length >= tries && activeHint != hint)
         {
@@ -120,14 +130,59 @@
         }
     }
 
+    function reset(){
+        localStorage.removeItem("submittedWeapons")
+        submittedWeapons = []
+        window.location.reload()
+    }
+
+    const handleObtainedOverlaps = (weaponName: string) => {
+        for(var i = 0; i < weapons[weaponName].obtained.length; i++){
+            if(correctWeapon.obtained.includes(weapons[weaponName].obtained[i])){
+                return true
+            }
+        }
+        return false
+    }
+
+    onMount(() => {
+        if(localStorage.getItem("submittedWeapons") != null && localStorage.getItem("day") != null){
+            if(JSON.parse(localStorage.getItem("day")!) == data.day){
+                JSON.parse(localStorage.getItem("submittedWeapons")!).forEach((weaponName: string) => {
+                    submittedWeapons = [...submittedWeapons, weaponName]
+                });
+            }
+            else{
+                localStorage.removeItem("submittedWeapons")
+                localStorage.setItem("day", JSON.stringify(data.day))
+            }
+        }
+        
+        if(localStorage.getItem("day") == null){
+            localStorage.removeItem("submittedWeapons")
+            localStorage.setItem("day", JSON.stringify(data.day))
+        }
+
+        if (submittedWeapons.includes(correctWeapon.name)){
+            gameCompleted = true
+        }
+    })
 </script>
 
-
+<!--Logo-->
+<div class="mt-8 w-full h-24 px-3">
+    <img
+        class="mx-auto w-80 drop-shadow-2xl -translate-y-[30%]"
+        src="/logo.png"
+        alt="logo"
+    />
+</div>
+<!--Hint Area-->
 <div>
     <div class="w-fit px-4 py-1 -translate-y-1/4 mx-auto h-auto rounded-3xl bg-[#850825] border-[1.5px] border-black flex items-center">
         <p class="mx-auto text-3xl" style="text-shadow: black 0px 0px 5px;">Guess today's weapon!</p>
     </div>
-    <div class="w-1/4 h-fit -my-8 bg-red-900 mx-auto mb-3 rounded-2xl border-[1.5px] px-2 py-3 border-black flex flex-col">
+    <div class="w-[336px] h-fit -my-8 bg-red-900 mx-auto mb-3 rounded-2xl border-[1.5px] px-2 py-3 border-black flex flex-col">
         <div class="w-full translate-y-[10%] flex gap-1 my-3 h-full">
             <button class="mx-2 w-full h-fit py-2 bg-red-950 border-black border-[1.5px] rounded-2xl" on:click={() => activateHint("coins", 3)}>
                 <div class="w-full h-fit mb-1">
@@ -204,6 +259,7 @@
         </div>              
     </div>
 </div>
+<!--Correct item image and description-->
 {#if gameCompleted}
     <div transition:fade class="w-full h-fit flex flex-col items-center justify-center">
         <p class="text-lg" style="text-shadow: black 0px 0px 5px;">Guessed in {submittedWeapons.length == 1 ? submittedWeapons.length + " try!" : submittedWeapons.length + " tries!"}</p>
@@ -220,8 +276,12 @@
             {/if}
             <p class="leading-4 py-1" style="text-shadow: black 0px 0px 5px;">{correctWeapon.tooltip}</p>
         </div>
+        <div class="mt-3 py-2 w-20 rounded-lg bg-red-800 flex items-center justify-center">
+            <button class="w-full h-full" on:click={reset}>Reset</button>
+        </div>
     </div>
 {/if}
+<!--Submitted Guesses Area-->
 <div class="mx-auto w-fit overflow-auto">
     <div class="mt-5 mx-auto w-full bg-[rgb(160,20,20,0.8)] border-black border-[1.5px] gap-1 text-center items-center flex justify-center">
         <div class="w-28 text-[14px]" style="text-shadow: black 0px 0px 5px;">Item</div>
@@ -289,12 +349,37 @@
                         <p style="text-shadow: black 0px 0px 5px;">No</p>
                     {/if}
                 </div>
-                <div class="flex flex-col w-[104px] h-16 mx-1 items-center justify-center overflow-y-visible {weapons[weapon].obtained == correctWeapon.obtained ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
-                    {#each weapons[weapon].obtained as method }
-                        <p style="text-shadow: black 0px 0px 5px;">{method}</p>
-                    {/each}
-                </div>
+                {#if weapons[weapon].obtained.join(" ") == correctWeapon.obtained.join(" ")}
+                    <div class="flex flex-col w-[104px] h-16 mx-1 items-center justify-center overflow-y-visible bg-green-600 border-black border-[1.5px]">
+                        {#each weapons[weapon].obtained as method }
+                            <p style="text-shadow: black 0px 0px 5px;">{method}</p>
+                        {/each}
+                    </div>
+                {:else if handleObtainedOverlaps(weapon) == true}
+                    <div class="flex flex-col w-[104px] h-16 mx-1 items-center justify-center overflow-y-visible bg-orange-600 border-black border-[1.5px]">
+                        {#each weapons[weapon].obtained as method }
+                            <p style="text-shadow: black 0px 0px 5px;">{method}</p>
+                        {/each}
+                    </div>
+                {:else}
+                    <div class="flex flex-col w-[104px] h-16 mx-1 items-center justify-center overflow-y-visible bg-red-600 border-black border-[1.5px]">
+                        {#each weapons[weapon].obtained as method }
+                            <p style="text-shadow: black 0px 0px 5px;">{method}</p>
+                        {/each}
+                    </div>
+                {/if}
+                
             </li>
         {/each}
     </ul>
+</div>
+<!--Footer-->
+<div class="mt-20 w-full flex flex-col items-center justify-center mb-4">
+    <p class="text-lg">Inspired by 
+        <a class="text-green-500 text-lg" href="https://terradle.com" target="_blank">Terradle</a> by
+        <a class="text-yellow-500 text-lg" href="https://github.com/cxhuy" target="_blank">cxhuy</a>
+    </p>
+    <p class="text-lg">Made by
+        <a class="text-red-500 text-lg" href="https://github.com/Obbaxobax" target="_blank">Obbax</a>
+    </p>
 </div>

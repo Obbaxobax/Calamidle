@@ -9,5 +9,5 @@ export async function load({fetch}){
     num = num % Object.keys(weapons).length == 0 ? num : num % Object.keys(weapons).length
     
 
-    return { weaponIndex: num, weapons: weapons}
+    return { weaponIndex: num, weapons: weapons, day: day}
 }
