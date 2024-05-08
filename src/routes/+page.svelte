@@ -179,10 +179,10 @@
 </div>
 <!--Hint Area-->
 <div>
-    <div class="w-fit px-4 py-1 -translate-y-1/4 mx-auto h-auto rounded-3xl bg-[#850825] border-[1.5px] border-black flex items-center">
+    <div class="min-w-fit w-[45%] px-4 py-1 -translate-y-1/4 mx-auto h-auto rounded-3xl bg-[#850825] border-[1.5px] border-black flex items-center">
         <p class="mx-auto text-3xl" style="text-shadow: black 0px 0px 5px;">Guess today's weapon!</p>
     </div>
-    <div class="w-[336px] h-fit -my-8 bg-red-900 mx-auto mb-3 rounded-2xl border-[1.5px] px-2 py-3 border-black flex flex-col">
+    <div class="min-w-[336px] w-[40%] h-fit -my-8 bg-red-900 mx-auto mb-3 rounded-2xl border-[1.5px] px-2 py-3 border-black flex flex-col">
         <div class="w-full translate-y-[10%] flex gap-1 my-3 h-full">
             <button class="mx-2 w-full h-fit py-2 bg-red-950 border-black border-[1.5px] rounded-2xl" on:click={() => activateHint("coins", 3)}>
                 <div class="w-full h-fit mb-1">
@@ -241,7 +241,7 @@
                         </button>
                     </div>
                     {#if filterWeaponsListOpen && filteredWeapons.length > 0}
-                        <ul class="mx-auto w-80 max-h-56 h-fit bg-red-950 border-[1.5px] border-red-400 rounded-xl absolute left-1/2 translate-x-[-50%] overflow-y-scroll no-scrollbar">
+                        <ul class="ml-2 w-[340px] max-h-56 h-fit bg-red-950 rounded-xl absolute overflow-y-scroll no-scrollbar">
                             {#each filteredWeapons as weaponName, i}
                                 <!-- svelte-ignore a11y-click-events-have-key-events -->
                                 <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
