@@ -8,6 +8,7 @@
     let disabled = true
     let weaponsPage = true
 
+    inject()
 </script>
 
 <div class="min-h-screen h-full w-full flex bg-black/30 backdrop-blur-sm overflow-auto">
