@@ -328,7 +328,7 @@
                     {/if}
                 </div>
                 <div class="flex w-[104px] h-16 mx-1 items-center justify-center {weapons[weapon].rarity == correctWeapon.rarity ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
-                    <img class="w-fit" src={"/rarities/" + weapons[weapon].rarity + ".png"} alt="weapons[weapon].rarity"/>
+                    <img class="w-[fit] text-center leading-none pr-1" src={"/rarities/" + weapons[weapon].rarity + ".png"} alt="weapons[weapon].rarity"/>
                     {#if parseInt(weapons[weapon].rarity) > parseInt(correctWeapon.rarity)}
                         <p class="text-center" style="text-shadow: black 0px 0px 5px;">⬇</p>
                     {:else if parseInt(weapons[weapon].rarity) < parseInt(correctWeapon.rarity)}
