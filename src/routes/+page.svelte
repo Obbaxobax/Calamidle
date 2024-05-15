@@ -342,7 +342,7 @@
                         <p style="text-shadow: black 0px 0px 5px;">No</p>
                     {/if}
                 </div>
-                <div class="flex w-[104px] h-16 mx-1 items-center justify-center {weapons[weapon].isAutoSwing == correctWeapon.isAutoSwing ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
+                <div class="flex w-[104px] h-16 mx-1 items-center justify-center {weapons[weapon].isMaterial == correctWeapon.isMaterial ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
                     {#if weapons[weapon].isMaterial == true}
                         <p style="text-shadow: black 0px 0px 5px;">Yes</p>
                     {:else}
