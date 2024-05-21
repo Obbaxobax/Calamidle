@@ -294,8 +294,8 @@
         <div class="w-28 text-[14px]" style="text-shadow: black 0px 0px 5px;">Is Material?</div>
         <div class="w-28 text-[14px]" style="text-shadow: black 0px 0px 5px;">Obtained</div>
     </div>
-    <ul class="w-full ">
-        {#each submittedWeapons as weapon}
+    <ul class="w-full">
+        {#each submittedWeapons as weapon (Object.keys(weapons).indexOf(weapon))}
             <li transition:scale class="mt-2 flex gap-1">
                 <div class="flex w-[104px] h-16 mx-1 items-center justify-center bg-red-900/60 border-black border-[1.5px]">
                     <img class="max-w-10 max-h-10" src={"/weapons/" + weapon.replace(/ /g, "_") + ".png"} alt={weapon}/>
