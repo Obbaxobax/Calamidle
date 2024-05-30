@@ -2,7 +2,6 @@
     import "../app.pcss";
     import { inject } from '@vercel/analytics'
     import { slide } from "svelte/transition"
-    import bosses from "$lib/bosses/bosses.svelte"
     import Bosses from "$lib/bosses/bosses.svelte";
 
     let disabled = true

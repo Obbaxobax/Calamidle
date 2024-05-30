@@ -6,8 +6,8 @@
     let input: String = ""
     let gameCompleted: boolean = false
 
-    let weaponIndex =  data.weaponIndex;
-    let weapons = data.weapons;
+    $: weaponIndex =  data.weaponIndex;
+    $: weapons = data.weapons;
     //{weapons["Basher"]["damage"]}
     let submittedWeapons: any[] = []
 
@@ -113,6 +113,7 @@
     function activateHint(hint: string, tries: number){
         if(gameCompleted == true && activeHint != hint){
             activeHint = hint
+            console.log(activeHint)
             return
         }
         else if(gameCompleted == true && activeHint == hint){
@@ -190,7 +191,7 @@
                     <p class="text-center h-full my-auto py-1 text-xs leading-none" style="text-shadow: black 0px 0px 5px;">Selling Price</p>
                     {#if submittedWeapons.length < 3 && !gameCompleted}
                         <p class="text-center h-full my-auto py-1 text-xs leading-none" style="text-shadow: black 0px 0px 5px;">in {3 - submittedWeapons.length} tries</p>
-                    {:else if !activeHint || activeHint != "coins"}
+                    {:else if !activeHint || activeHint != "coins" || gameCompleted && activeHint != "coins"}
                         <p class="text-center h-full my-auto py-1 text-xs leading-none" style="text-shadow: black 0px 0px 5px;">click to reveal</p>
                     {/if}
                 </div>
@@ -201,7 +202,7 @@
                     <p class="text-center h-full my-auto py-1 text-xs leading-none" style="text-shadow: black 0px 0px 5px;">Tooltip</p>
                     {#if submittedWeapons.length < 7 && !gameCompleted}
                         <p class="text-center h-full my-auto py-1 text-xs leading-none" style="text-shadow: black 0px 0px 5px;">in {7 - submittedWeapons.length} tries</p>
-                    {:else if !activeHint || activeHint != "tooltip"}
+                    {:else if !activeHint || activeHint != "tooltip" || gameCompleted && activeHint != "tooltip"}
                         <p class="text-center h-full my-auto py-1 text-xs leading-none" style="text-shadow: black 0px 0px 5px;">click to reveal</p>
                     {/if}
                 </div>
@@ -212,7 +213,7 @@
                     <p class="text-center h-full my-auto py-1 text-xs leading-none" style="text-shadow: black 0px 0px 5px;">Image</p>
                     {#if submittedWeapons.length < 11 && !gameCompleted}
                         <p class="text-center h-full my-auto py-1 text-xs leading-none" style="text-shadow: black 0px 0px 5px;">in {11 - submittedWeapons.length} tries</p>
-                    {:else if !activeHint || activeHint != "image"}
+                    {:else if !activeHint || activeHint != "image" || gameCompleted && activeHint != "image"}
                         <p class="text-center h-full my-auto py-1 text-xs leading-none" style="text-shadow: black 0px 0px 5px;">click to reveal</p>
                     {/if}
                 </div>
@@ -220,15 +221,15 @@
         </div>
         {#if activeHint == "coins"}
             <div transition:slide class="bg-red-950 border-black border-[1.5px] mx-2 mt-2 h-10 rounded-2xl flex items-center justify-center">
-                <p class="text-center text-sm leading-none" style="text-shadow: black 0px 0px 5px;">{correctWeapon.sellValue}</p>
+                <p class="text-center text-sm leading-none {correctWeapon.sellValue.includes("Gold") ? "text-amber-300" : correctWeapon.sellValue.includes("Silver") ? "text-gray-400" : "text-amber-700"}" style="text-shadow: black 0px 0px 5px;">{correctWeapon.sellValue}</p>
             </div>
         {:else if activeHint == "tooltip"}
             <div transition:slide class="bg-red-950 border-black border-[1.5px] mx-2 mt-2 h-10 rounded-2xl flex items-center justify-center">
-                <p class="text-center text-sm leading-none" style="text-shadow: black 0px 0px 5px;">{correctWeapon.tooltip != null ? correctWeapon.tooltip : "No tooltip"}</p>
+                <p class="text-center text-sm leading-none p-2" style="text-shadow: black 0px 0px 5px;">{correctWeapon.tooltip != null ? correctWeapon.tooltip?.replace(/(?<=\w{2})[^\s!%&'",.?]/g, "-") : "No tooltip"}</p>
             </div>
         {:else if activeHint == "image"}
             <div transition:slide class="bg-red-950 border-black border-[1.5px] mx-2 mt-2 h-10 rounded-2xl flex items-center justify-center">
-                <img class="blur-sm" src={"/weapons/" + correctWeapon.name.replace(/ /g, "_") + ".png"} alt="blurred">
+                <img class="blur-sm" src={"/weapons/" + correctWeapon.name?.replace(/ /g, "_") + ".png"} alt="blurred">
             </div>
         {/if}
         <div class="w-full mt-3">
@@ -264,7 +265,7 @@
     <div transition:fade class="w-full h-fit flex flex-col items-center justify-center">
         <p class="text-lg" style="text-shadow: black 0px 0px 5px;">Guessed in {submittedWeapons.length == 1 ? submittedWeapons.length + " try!" : submittedWeapons.length + " tries!"}</p>
         <div class="bg-red-800/80 w-20 h-20 mt-2 flex items-center justify-center rounded-lg border-[1.5px] border-black">
-            <img class="w-fit h-10" src={"/weapons/" + correctWeapon.name.replace(/ /g, "_") + ".png"} alt={correctWeapon.name}/>
+            <img class="w-fit h-10" src={"/weapons/" + correctWeapon.name?.replace(/ /g, "_") + ".png"} alt={correctWeapon.name}/>
         </div>
         <div class="bg-red-800/80 w-80 h-fit rounded-lg mt-2 border-[1.5px] border-black px-3 py-4">
             <p class="leading-4 py-1" style="color:{rarityColors[correctWeapon.rarity]}; text-shadow: black 0px 0px 5px;">{correctWeapon.name}</p>
@@ -284,65 +285,65 @@
 <!--Submitted Guesses Area-->
 <div class="mx-auto w-fit overflow-auto">
     <div class="mt-5 mx-auto w-full bg-[rgb(160,20,20,0.8)] border-black border-[1.5px] gap-1 text-center items-center flex justify-center">
-        <div class="w-28 text-[14px]" style="text-shadow: black 0px 0px 5px;">Item</div>
-        <div class="w-28 text-[14px]" style="text-shadow: black 0px 0px 5px;">Damage Type</div>
-        <div class="w-28 text-[14px]" style="text-shadow: black 0px 0px 5px;">Damage</div>
-        <div class="w-28 text-[14px]" style="text-shadow: black 0px 0px 5px;">Knockback</div>
-        <div class="w-28 text-[14px]" style="text-shadow: black 0px 0px 5px;">Use Speed</div>
-        <div class="w-28 text-[14px]" style="text-shadow: black 0px 0px 5px;">Rarity</div>
-        <div class="w-28 text-[14px]" style="text-shadow: black 0px 0px 5px;">Is Autoswing?</div>
-        <div class="w-28 text-[14px]" style="text-shadow: black 0px 0px 5px;">Is Material?</div>
-        <div class="w-28 text-[14px]" style="text-shadow: black 0px 0px 5px;">Obtained</div>
+        <div class="w-32 text-[14px]" style="text-shadow: black 0px 0px 5px;">Item</div>
+        <div class="w-32 text-[14px]" style="text-shadow: black 0px 0px 5px;">Damage Type</div>
+        <div class="w-32 text-[14px]" style="text-shadow: black 0px 0px 5px;">Damage</div>
+        <div class="w-32 text-[14px]" style="text-shadow: black 0px 0px 5px;">Knockback</div>
+        <div class="w-32 text-[14px]" style="text-shadow: black 0px 0px 5px;">Use Speed</div>
+        <div class="w-32 text-[14px]" style="text-shadow: black 0px 0px 5px;">Rarity</div>
+        <div class="w-32 text-[14px]" style="text-shadow: black 0px 0px 5px;">Autoswing?</div>
+        <div class="w-32 text-[14px]" style="text-shadow: black 0px 0px 5px;">Material?</div>
+        <div class="w-32 text-[14px]" style="text-shadow: black 0px 0px 5px;">Obtained</div>
     </div>
     <ul class="w-full">
         {#each submittedWeapons as weapon (Object.keys(weapons).indexOf(weapon))}
             <li transition:scale class="mt-2 flex gap-1">
-                <div class="flex w-[104px] h-16 mx-1 items-center justify-center bg-red-900/60 border-black border-[1.5px]">
+                <div class="flex w-[120px] h-16 mx-1 items-center justify-center bg-red-900/60 border-black border-[1.5px]">
                     <img class="max-w-10 max-h-10" src={"/weapons/" + weapon.replace(/ /g, "_") + ".png"} alt={weapon}/>
                 </div>
-                <div class="flex w-[104px] h-16 mx-1 items-center justify-center {weapons[weapon].damagetype == correctWeapon.damagetype ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
+                <div class="flex w-[120px] h-16 mx-1 items-center justify-center {weapons[weapon].damagetype == correctWeapon.damagetype ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
                     <p>{weapons[weapon].damagetype}</p>
                 </div>
-                <div class="flex w-[104px] h-16 mx-1 items-center justify-center {weapons[weapon].damage == correctWeapon.damage ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
+                <div class="flex w-[120px] h-16 mx-1 items-center justify-center {weapons[weapon].damage == correctWeapon.damage ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
                     <p class="w-[70%] text-center leading-none" style="text-shadow: black 0px 0px 5px;">{weapons[weapon].damage}</p>
                     {#if parseInt(weapons[weapon].damage) > parseInt(correctWeapon.damage)}
-                        <p class="ml-1" style="text-shadow: black 0px 0px 5px;">⬇</p>
+                        <p class="text-center pl-2" style="text-shadow: black 0px 0px 5px;">⬇</p>
                     {:else if parseInt(weapons[weapon].damage) < parseInt(correctWeapon.damage)}
-                        <p class="ml-1" style="text-shadow: black 0px 0px 5px;">⬆</p>
+                        <p class="text-center pl-2" style="text-shadow: black 0px 0px 5px;">⬆</p>
                     {/if}
                 </div>
-                <div class="flex w-[104px] h-16 mx-1 items-center justify-center {weapons[weapon].knockback == correctWeapon.knockback ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
-                    <p class="w-[70%] text-center leading-none" style="text-shadow: black 0px 0px 5px;">{weapons[weapon].knockback.replace(" Knockback", "")}</p>
+                <div class="flex w-[120px] h-16 mx-1 items-center justify-center {weapons[weapon].knockback == correctWeapon.knockback ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
+                    <p class="w-[70%] text-center leading-none" style="text-shadow: black 0px 0px 5px;">{weapons[weapon].knockback?.replace(" Knockback", "")}</p>
                     {#if knockbacks.indexOf(weapons[weapon].knockback) > knockbacks.indexOf(correctWeapon.knockback)}
-                        <p class="text-center" style="text-shadow: black 0px 0px 5px;">⬇</p>
+                        <p class="text-center pl-2" style="text-shadow: black 0px 0px 5px;">⬇</p>
                     {:else if knockbacks.indexOf(weapons[weapon].knockback) < knockbacks.indexOf(correctWeapon.knockback)}
-                        <p class="text-center" style="text-shadow: black 0px 0px 5px;">⬆</p>
+                        <p class="text-center pl-2" style="text-shadow: black 0px 0px 5px;">⬆</p>
                     {/if}
                 </div>
-                <div class="flex w-[104px] h-16 mx-1 items-center justify-center {weapons[weapon].speed == correctWeapon.useSpeed ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
-                    <p class="w-[70%] text-center leading-none" style="text-shadow: black 0px 0px 5px;">{weapons[weapon].speed.replace(" Speed", "")}</p>
+                <div class="flex w-[120px] h-16 mx-1 items-center justify-center {weapons[weapon].speed == correctWeapon.useSpeed ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
+                    <p class="w-[70%] text-center leading-none" style="text-shadow: black 0px 0px 5px;">{weapons[weapon].speed?.replace(" Speed", "")}</p>
                     {#if useSpeeds.indexOf(weapons[weapon].speed) < useSpeeds.indexOf(correctWeapon.useSpeed)}
-                        <p class="text-center" style="text-shadow: black 0px 0px 5px;">⬇</p>
+                        <p class="text-center pl-2" style="text-shadow: black 0px 0px 5px;">⬇</p>
                     {:else if useSpeeds.indexOf(weapons[weapon].speed) > useSpeeds.indexOf(correctWeapon.useSpeed)}
-                        <p class="text-center" style="text-shadow: black 0px 0px 5px;">⬆</p>
+                        <p class="text-center pl-2" style="text-shadow: black 0px 0px 5px;">⬆</p>
                     {/if}
                 </div>
-                <div class="flex w-[104px] h-16 mx-1 items-center justify-center {weapons[weapon].rarity == correctWeapon.rarity ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
+                <div class="flex w-[120px] h-16 mx-1 items-center justify-center {weapons[weapon].rarity == correctWeapon.rarity ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
                     <img class="w-[fit] text-center leading-none pr-1" src={"/rarities/" + weapons[weapon].rarity + ".png"} alt="weapons[weapon].rarity"/>
                     {#if parseInt(weapons[weapon].rarity) > parseInt(correctWeapon.rarity)}
-                        <p class="text-center" style="text-shadow: black 0px 0px 5px;">⬇</p>
+                        <p class="text-center pl-2" style="text-shadow: black 0px 0px 5px;">⬇</p>
                     {:else if parseInt(weapons[weapon].rarity) < parseInt(correctWeapon.rarity)}
-                        <p class="text-center" style="text-shadow: black 0px 0px 5px;">⬆</p>
+                        <p class="text-center pl-2" style="text-shadow: black 0px 0px 5px;">⬆</p>
                     {/if}
                 </div>
-                <div class="flex w-[104px] h-16 mx-1 items-center justify-center {weapons[weapon].isAutoSwing == correctWeapon.isAutoSwing ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
+                <div class="flex w-[120px] h-16 mx-1 items-center justify-center {weapons[weapon].isAutoSwing == correctWeapon.isAutoSwing ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
                     {#if weapons[weapon].isAutoSwing == true}
                         <p style="text-shadow: black 0px 0px 5px;">Yes</p>
                     {:else}
                         <p style="text-shadow: black 0px 0px 5px;">No</p>
                     {/if}
                 </div>
-                <div class="flex w-[104px] h-16 mx-1 items-center justify-center {weapons[weapon].isMaterial == correctWeapon.isMaterial ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
+                <div class="flex w-[120px] h-16 mx-1 items-center justify-center {weapons[weapon].isMaterial == correctWeapon.isMaterial ? "bg-green-600" : "bg-red-600"} border-black border-[1.5px]">
                     {#if weapons[weapon].isMaterial == true}
                         <p style="text-shadow: black 0px 0px 5px;">Yes</p>
                     {:else}
@@ -350,19 +351,19 @@
                     {/if}
                 </div>
                 {#if weapons[weapon].obtained.join(" ") == correctWeapon.obtained.join(" ")}
-                    <div class="flex flex-col w-[104px] h-16 mx-1 items-center justify-center overflow-y-visible bg-green-600 border-black border-[1.5px]">
+                    <div class="flex flex-col w-[120px] h-16 mx-1 items-center justify-center overflow-y-visible bg-green-600 border-black border-[1.5px]">
                         {#each weapons[weapon].obtained as method }
                             <p style="text-shadow: black 0px 0px 5px;">{method}</p>
                         {/each}
                     </div>
                 {:else if handleObtainedOverlaps(weapon) == true}
-                    <div class="flex flex-col w-[104px] h-16 mx-1 items-center justify-center overflow-y-visible bg-orange-600 border-black border-[1.5px]">
+                    <div class="flex flex-col w-[120px] h-16 mx-1 items-center justify-center overflow-y-visible bg-orange-600 border-black border-[1.5px]">
                         {#each weapons[weapon].obtained as method }
                             <p style="text-shadow: black 0px 0px 5px;">{method}</p>
                         {/each}
                     </div>
                 {:else}
-                    <div class="flex flex-col w-[104px] h-16 mx-1 items-center justify-center overflow-y-visible bg-red-600 border-black border-[1.5px]">
+                    <div class="flex flex-col w-[120px] h-16 mx-1 items-center justify-center overflow-y-visible bg-red-600 border-black border-[1.5px]">
                         {#each weapons[weapon].obtained as method }
                             <p style="text-shadow: black 0px 0px 5px;">{method}</p>
                         {/each}
