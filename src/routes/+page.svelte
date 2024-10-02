@@ -179,10 +179,10 @@
 </div>
 <!--Hint Area-->
 <div>
-    <div class="w-[85%] md:w-[50%] lg:w-[35%] px-4 py-1 -translate-y-1/4 mx-auto h-auto rounded-3xl bg-[#850825] border-[1.5px] border-black flex items-center">
+    <div class="w-[85%] md:w-[45%] lg:w-[40%] max-w-[550px] px-4 py-1 -translate-y-1/4 mx-auto h-auto rounded-3xl bg-[#850825] border-[1.5px] border-black flex items-center">
         <p class="mx-auto text-lg md:text-2xl lg:text-3xl" style="text-shadow: black 0px 0px 5px;">Guess today's weapon!</p>
     </div>
-    <div class="w-[95%] md:w-[80%] lg:w-[30%] h-fit -my-8 bg-red-900 mx-auto mb-3 rounded-2xl border-[1.5px] px-2 py-3 border-black flex flex-col">
+    <div class="w-[95%] md:w-[50%] lg:w-[45%] max-w-[600px] h-fit -my-8 bg-red-900 mx-auto mb-3 rounded-2xl border-[1.5px] px-2 py-3 border-black flex flex-col">
         <div class="w-full translate-y-[10%] flex sm:gap-3 gap-2 my-3 h-full">
             <button class="w-full h-28 sm:h-24 py-2 px-[2px] bg-red-950 border-black border-[1.5px] rounded-2xl flex flex-col" on:click={() => activateHint("coins", 3)}>
                 <div class="w-full h-full mb-1">
@@ -288,8 +288,8 @@
     </div>
 {/if}
 <!--Submitted Guesses Area-->
-<div class="w-full">
-    <div class="mx-0 sm:mx-auto px-4 w-full xl:w-fit overflow-x-scroll xl:overflow-auto">
+<div class="w-full flex justify-center">
+    <div class="px-4 w-full xl:w-fit overflow-x-scroll xl:overflow-auto">
         <div class="mt-5 mx-auto w-[1200px] bg-[rgb(160,20,20,0.8)] border-black border-[1.5px] gap-1 text-center items-center flex justify-center">
             <div class="w-32 text-[14px]" style="text-shadow: black 0px 0px 5px;">Item</div>
             <div class="w-32 text-[14px]" style="text-shadow: black 0px 0px 5px;">Damage Type</div>
