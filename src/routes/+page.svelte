@@ -383,6 +383,10 @@
 </div>
 <!--Footer-->
 <div class="mt-10 sm:mt-20 w-full flex flex-col items-center justify-center mb-4">
+    <p class="text-lg">To report incorrect info, 
+        <a class="text-orange-500" href="https://github.com/Obbaxobax/Calamidle/issues" target="_blank">click here</a>
+        or message me on Discord (Obbax).
+    </p>
     <p class="text-lg">Inspired by 
         <a class="text-green-500 text-lg" href="https://terradle.com" target="_blank">Terradle</a> by
         <a class="text-yellow-500 text-lg" href="https://github.com/cxhuy" target="_blank">cxhuy</a>
