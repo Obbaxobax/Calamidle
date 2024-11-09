@@ -169,6 +169,10 @@
     })
 </script>
 
+<svelte:head>
+    <title>Calamidle</title>
+    <meta name="description" content="A wordle-like game inspired by Terradle for Calamity Mod!"/>
+</svelte:head>
 <!--Logo-->
 <div class="mt-8 w-full h-24 px-3">
     <img
