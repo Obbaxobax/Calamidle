@@ -95,7 +95,6 @@
         "sellValue": "40 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -110,7 +109,6 @@
         "sellValue": "80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped",
             "Crafting"
         ]
@@ -168,7 +166,6 @@
         "sellValue": "80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped",
             "Crafting"
         ]
@@ -282,7 +279,6 @@
         "rarity": "5",
         "sellValue": "4 Gold 80 Silver Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -630,7 +626,6 @@
         "sellValue": "9 Gold 60 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -799,7 +794,6 @@
         "tooltip": "Launches damaging homing sparks and explodes on enemy hits",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -940,7 +934,6 @@
         "rarity": "14",
         "sellValue": "40 Gold Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1011,7 +1004,6 @@
         "tooltip": "Striking enemies will cause them to explode into holy fire",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1082,7 +1074,6 @@
         "sellValue": "30 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1195,7 +1186,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1224,7 +1214,6 @@
         "sellValue": "35 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1239,7 +1228,6 @@
         "sellValue": "35 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1254,7 +1242,6 @@
         "sellValue": "40 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1283,7 +1270,6 @@
         "sellValue": "4 Gold 80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1355,7 +1341,6 @@
         "isMaterial": false,
         "obtained": [
             "Dropped",
-            "Dropped",
             "Crafting"
         ]
     },
@@ -1426,7 +1411,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1441,7 +1425,6 @@
         "sellValue": "9 Gold 60 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1456,7 +1439,6 @@
         "sellValue": "12 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1540,7 +1522,6 @@
         "isAutoSwing": true,
         "sellValue": "30 Gold Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1569,7 +1550,6 @@
         "isAutoSwing": true,
         "tooltip": "Ruins nearby enemies with death lasers",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1641,7 +1621,6 @@
         "isMaterial": false,
         "obtained": [
             "Dropped",
-            "Dropped",
             "Crafting"
         ]
     },
@@ -1697,7 +1676,6 @@
         "sellValue": "4 Gold 80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1712,7 +1690,6 @@
         "sellValue": "12 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1811,7 +1788,6 @@
         "tooltip": "Swings a banshee hook that fires blades and explodes on hit",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1840,7 +1816,6 @@
         "sellValue": "24 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -1995,7 +1970,6 @@
         "sellValue": "9 Gold 60 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -2024,7 +1998,6 @@
         "sellValue": "40 Gold Coins",
         "tooltip": "Striking an enemy with the whip causes glacial explosions and grants the player the cosmic freeze buff",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -2109,7 +2082,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -2346,7 +2318,6 @@
         "tooltip": "Rains down a stream of draconic fire at the cursor",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -2389,7 +2360,6 @@
         "sellValue": "48 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -2460,7 +2430,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -2529,7 +2498,6 @@
         "sellValue": "48 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -2572,7 +2540,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -2587,7 +2554,6 @@
         "sellValue": "40 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -2700,7 +2666,6 @@
         "sellValue": "4 Gold 80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -2799,7 +2764,6 @@
         "rarity": "5",
         "sellValue": "4 Gold 80 Silver Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -2814,7 +2778,6 @@
         "sellValue": "12 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -2927,7 +2890,6 @@
         "speed": "Fast Speed",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -2942,7 +2904,6 @@
         "speed": "Fast Speed",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -3055,7 +3016,6 @@
         "rarity": "12",
         "sellValue": "30 Gold Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -3070,7 +3030,6 @@
         "tooltip": "Fires volleys of four colossal radiant arrows which can pass through walls",
         "speed": "Average Speed",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -3141,7 +3100,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -3213,7 +3171,6 @@
         "isMaterial": false,
         "obtained": [
             "Dropped",
-            "Dropped",
             "Crafting"
         ]
     },
@@ -3228,7 +3185,6 @@
         "rarity": "2",
         "sellValue": "40 Silver Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -3257,7 +3213,6 @@
         "sellValue": "9 Gold 60 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -3384,7 +3339,6 @@
         "sellValue": "4 Gold 80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -3427,7 +3381,6 @@
         "sellValue": "9 Gold 60 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -3511,7 +3464,6 @@
         "sellValue": "12 Gold Coins",
         "isAutoSwing": true,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -3540,7 +3492,6 @@
         "rarity": "8",
         "sellValue": "12 Gold Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -3722,7 +3673,6 @@
         "speed": "Very Fast Speed",
         "tooltip": "Has a chance to release rotten chunks instead of bullets",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -3737,7 +3687,6 @@
         "speed": "Average Speed",
         "tooltip": "Fires 5 bullets at once",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -3780,7 +3729,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -3973,7 +3921,6 @@
         "sellValue": "30 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -3988,7 +3935,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -4086,7 +4032,6 @@
         "sellValue": "12 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -4129,7 +4074,6 @@
         "sellValue": "30 Gold Coins",
         "isAutoSwing": true,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -4144,7 +4088,6 @@
         "tooltip": "Fires chicken flares which create enormous incendiary explosions",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -4229,7 +4172,6 @@
         "sellValue": "2 Gold 40 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -4244,7 +4186,6 @@
         "sellValue": "80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped",
             "Crafting"
         ]
@@ -4274,7 +4215,6 @@
         "sellValue": "9 Gold 60 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -4289,7 +4229,6 @@
         "sellValue": "12 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -4388,7 +4327,6 @@
         "tooltip": "Fires dragon fireballs at an accelerating pace",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -4445,7 +4383,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -4708,7 +4645,6 @@
         "sellValue": "4 Gold 80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -4751,7 +4687,6 @@
         "rarity": "9",
         "sellValue": "16 Gold Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -4862,7 +4797,6 @@
         "speed": "Snail Speed",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -4891,7 +4825,6 @@
         "sellValue": "35 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -4977,7 +4910,6 @@
         "isMaterial": false,
         "obtained": [
             "Dropped",
-            "Dropped",
             "Crafting"
         ]
     },
@@ -5006,7 +4938,6 @@
         "sellValue": "40 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -5091,7 +5022,6 @@
         "sellValue": "40 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -5105,7 +5035,6 @@
         "sellValue": "80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped",
             "Crafting"
         ]
@@ -5135,7 +5064,6 @@
         "sellValue": "9 Gold 60 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -5206,7 +5134,6 @@
         "rarity": "7",
         "sellValue": "9 Gold 60 Silver Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -5235,7 +5162,6 @@
         "sellValue": "4 Gold 80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -5278,7 +5204,6 @@
         "sellValue": "12 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -5363,7 +5288,6 @@
         "speed": "Average Speed",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -5392,7 +5316,6 @@
         "rarity": "5",
         "sellValue": "4 Gold 80 Silver Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -5435,7 +5358,6 @@
         "tooltip": "Calls down a swarm of molten asteroids",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -5492,7 +5414,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -5563,7 +5484,6 @@
         "sellValue": "35 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -5660,7 +5580,6 @@
         "speed": "Very Slow Speed",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -5786,7 +5705,6 @@
         "speed": "Extremely Slow Speed",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -5829,7 +5747,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -6124,7 +6041,6 @@
         "sellValue": "35 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -6195,7 +6111,6 @@
         "sellValue": "30 Gold Coins",
         "speed": "Slow Speed",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -6238,7 +6153,6 @@
         "speed": "Slow Speed",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -6253,7 +6167,6 @@
         "rarity": "4",
         "sellValue": "2 Gold 40 Silver Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -6282,7 +6195,6 @@
         "rarity": "4",
         "sellValue": "2 Gold 40 Silver Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -6437,7 +6349,6 @@
         "rarity": "7",
         "sellValue": "9 Gold 60 Silver Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -6494,7 +6405,6 @@
         "sellValue": "4 Gold 80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -6551,7 +6461,6 @@
         "rarity": "9",
         "sellValue": "16 Gold Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -6706,7 +6615,6 @@
         "sellValue": "48 Gold Coins",
         "isAutoSwing": true,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -6790,7 +6698,6 @@
         "sellValue": "24 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -6873,7 +6780,6 @@
         "sellValue": "9 Gold 60 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7000,7 +6906,6 @@
         "isMaterial": false,
         "obtained": [
             "Dropped",
-            "Dropped",
             "Crafting"
         ]
     },
@@ -7056,7 +6961,6 @@
         "sellValue": "48 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7085,7 +6989,6 @@
         "sellValue": "40 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7113,7 +7016,6 @@
         "sellValue": "2 Gold 40 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7128,7 +7030,6 @@
         "sellValue": "2 Gold 40 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7143,7 +7044,6 @@
         "sellValue": "80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped",
             "Crafting"
         ]
@@ -7201,7 +7101,6 @@
         "isMaterial": false,
         "obtained": [
             "Dropped",
-            "Dropped",
             "Crafting"
         ]
     },
@@ -7243,7 +7142,6 @@
         "sellValue": "40 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7424,7 +7322,6 @@
         "sellValue": "4 Gold 80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7439,7 +7336,6 @@
         "sellValue": "4 Gold 80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7454,7 +7350,6 @@
         "sellValue": "9 Gold 60 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped",
             "Crafting"
         ]
@@ -7484,7 +7379,6 @@
         "rarity": "8",
         "sellValue": "12 Gold Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7499,7 +7393,6 @@
         "sellValue": "9 Gold 60 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7514,7 +7407,6 @@
         "sellValue": "4 Gold 80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7556,7 +7448,6 @@
         "sellValue": "12 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7640,7 +7531,6 @@
         "sellValue": "16 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7708,7 +7598,6 @@
         "sellValue": "48 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7778,7 +7667,6 @@
         "rarity": "12",
         "sellValue": "30 Gold Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7793,7 +7681,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7863,7 +7750,6 @@
         "rarity": "13",
         "sellValue": "35 Gold Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7970,7 +7856,6 @@
         "rarity": "13",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -7985,7 +7870,6 @@
         "sellValue": "48 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -8055,7 +7939,6 @@
         "tooltip": "Summons an aerial mechworm to fight for you",
         "obtained": [
             "Dropped",
-            "Dropped",
             "Crafting"
         ]
     },
@@ -8111,7 +7994,6 @@
         "sellValue": "48 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -8139,7 +8021,6 @@
         "sellValue": "30 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -8168,7 +8049,6 @@
         "sellValue": "48 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -8324,7 +8204,6 @@
         "sellValue": "12 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -8353,7 +8232,6 @@
         "sellValue": "48 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -8367,7 +8245,6 @@
         "sellValue": "35 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -8438,7 +8315,6 @@
         "sellValue": "9 Gold 60 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -8577,7 +8453,6 @@
         "sellValue": "9 Gold 60 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -8606,7 +8481,6 @@
         "sellValue": "12 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -8859,7 +8733,6 @@
         "sellValue": "40 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -8998,7 +8871,6 @@
         "rarity": "5",
         "sellValue": "4 Gold 80 Silver Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -9125,7 +8997,6 @@
         "sellValue": "35 Gold Coins",
         "isAutoSwing": true,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -9140,7 +9011,6 @@
         "rarity": "12",
         "sellValue": "30 Gold Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -9168,7 +9038,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -9308,7 +9177,6 @@
         "sellValue": "40 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -9365,7 +9233,6 @@
         "sellValue": "12 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -9394,7 +9261,6 @@
         "rarity": "7",
         "sellValue": "9 Gold 60 Silver Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -9409,7 +9275,6 @@
         "tooltip": "Throws a stream of kunai that stick to enemies and explode",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -9522,7 +9387,6 @@
         "rarity": "12",
         "sellValue": "30 Gold Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -9565,7 +9429,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -9664,7 +9527,6 @@
         "rarity": "2",
         "sellValue": "40 Silver Coins",
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -9763,7 +9625,6 @@
         "sellValue": "4 Gold 80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -9834,7 +9695,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -9919,7 +9779,6 @@
         "tooltip": "Throws an agile, homing winged spear that constantly spits fire",
         "isAutoSwing": true,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -10182,7 +10041,6 @@
         "isMaterial": false,
         "obtained": [
             "Dropped",
-            "Dropped",
             "Crafting"
         ]
     },
@@ -10238,7 +10096,6 @@
         "sellValue": "2 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped",
             "Crafting"
         ]
@@ -10296,7 +10153,6 @@
         "sellValue": "9 Gold 60 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -10437,7 +10293,6 @@
         "sellValue": "9 Gold 60 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -10452,7 +10307,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -10481,7 +10335,6 @@
         "sellValue": "12 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -10593,7 +10446,6 @@
         "sellValue": "48 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -10622,7 +10474,6 @@
         "speed": "Average Speed",
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     },
@@ -10637,7 +10488,6 @@
         "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
-            "Dropped",
             "Dropped"
         ]
     }
