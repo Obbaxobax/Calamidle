@@ -16,7 +16,7 @@
     "Broken Biome Blade": {
         "isMaterial": true,
         "damagetype": "Melee",
-        "damage": "38",
+        "damage": "65",
         "speed": "Very Slow Speed",
         "knockback": "Average Knockback",
         "isAutoSwing": true,
@@ -52,7 +52,7 @@
         "isMaterial": false,
         "tooltip": "none",
         "obtained": [
-            "Chest",
+            "Found",
             "Crafting"
         ]
     },
@@ -142,14 +142,14 @@
         ]
     },
     "Teardrop Cleaver": {
-        "isAutoSwing": true,
         "damagetype": "Melee",
         "damage": "38",
         "knockback": "Average Knockback",
         "speed": "Slow Speed",
+        "isAutoSwing": true,
+        "tooltip": "Makes your enemies cry",
         "rarity": "2",
         "sellValue": "40 Silver Coins",
-        "tooltip": "Makes your enemies cry",
         "isMaterial": false,
         "obtained": [
             "Dropped"
@@ -175,8 +175,8 @@
         "damagetype": "Melee",
         "damage": "41",
         "knockback": "Average Knockback",
-        "isAutoSwing": true,
         "speed": "Average Speed",
+        "isAutoSwing": true,
         "tooltip": "Fires cyclones that suck enemies in",
         "rarity": "3",
         "sellValue": "80 Silver Coins",
@@ -202,8 +202,8 @@
         "damagetype": "Melee",
         "damage": "152",
         "knockback": "Average Knockback",
-        "isAutoSwing": true,
         "speed": "Average Speed",
+        "isAutoSwing": true,
         "tooltip": "Striking an enemy with the blade causes an earthen eruption",
         "rarity": "8",
         "sellValue": "12 Gold Coins",
@@ -313,7 +313,7 @@
     "Biome Blade": {
         "isMaterial": true,
         "damagetype": "Melee",
-        "damage": "80",
+        "damage": "300",
         "speed": "Average Speed",
         "knockback": "Very Strong Knockback",
         "isAutoSwing": true,
@@ -383,9 +383,9 @@
     "Carnage": {
         "damagetype": "Melee",
         "damage": "130",
+        "knockback": "Average Knockback",
         "speed": "Average Speed",
         "isAutoSwing": true,
-        "knockback": "Average Knockback",
         "tooltip": "Enemies explode into homing blood on death",
         "rarity": "4",
         "sellValue": "2 Gold 40 Silver Coins",
@@ -455,7 +455,8 @@
         "damagetype": "Melee",
         "speed": "Slow Speed",
         "knockback": "Strong Knockback",
-        "tooltip": "Fires red echo slash projectiles at full health",
+        "tooltip": "Fires red echo slash projectiles when above 75% health",
+        "isAutoSwing": true,
         "rarity": "4",
         "sellValue": "2 Gold 40 Silver Coins",
         "isMaterial": false,
@@ -514,7 +515,10 @@
         "knockback": "Average Knockback",
         "isAutoSwing": true,
         "tooltip": "For every enemy you kill this hammer gains stat bonuses",
-        "isMaterial": false
+        "isMaterial": false,
+        "obtained": [
+            "Dropped"
+        ]
     },
     "Exalted Oathblade": {
         "isMaterial": true,
@@ -710,6 +714,7 @@
         "tooltip": "The hellish Wall of Flesh holds the key to this weapon's power",
         "isMaterial": false,
         "obtained": [
+            "Found",
             "Crafting"
         ]
     },
@@ -772,7 +777,7 @@
     "True Biome Blade": {
         "isMaterial": true,
         "damagetype": "Melee",
-        "damage": "200",
+        "damage": "550",
         "speed": "Average Speed",
         "knockback": "Very Strong Knockback",
         "isAutoSwing": true,
@@ -971,7 +976,7 @@
         "damage": "472",
         "speed": "Average Speed",
         "knockback": "Very Strong Knockback",
-        "tooltip": "Hitting an enemy will greatly boost your defense, melee damage and melee crit for a short time",
+        "tooltip": "Hitting an enemy will greatly boost your melee damage, defense, and damage reduction for a short time",
         "rarity": "12",
         "sellValue": "30 Gold Coins",
         "isMaterial": false,
@@ -1114,20 +1119,6 @@
         "rarity": "11",
         "sellValue": "24 Gold Coins",
         "tooltip": "Fires a plague and bee cloud",
-        "isMaterial": false,
-        "obtained": [
-            "Crafting"
-        ]
-    },
-    "Prismatic Breaker": {
-        "damagetype": "Melee/ranged",
-        "damage": "699",
-        "knockback": "Strong Knockback",
-        "speed": "Fast Speed",
-        "isAutoSwing": true,
-        "tooltip": "Fire to charge for a powerful rainbow laser",
-        "rarity": "14",
-        "sellValue": "40 Gold Coins",
         "isMaterial": false,
         "obtained": [
             "Crafting"
@@ -1497,20 +1488,6 @@
             "Crafting"
         ]
     },
-    "Azathoth": {
-        "damagetype": "Melee",
-        "damage": "90",
-        "knockback": "Average Knockback",
-        "speed": "Average Speed",
-        "isAutoSwing": true,
-        "rarity": "16",
-        "sellValue": "56 Gold Coins",
-        "tooltip": "Fires cosmic orbs that blast nearby enemies with lasers",
-        "isMaterial": false,
-        "obtained": [
-            "Crafting"
-        ]
-    },
     "Burning Revelation": {
         "isMaterial": true,
         "damage": "120",
@@ -1562,6 +1539,20 @@
         "tooltip": "Emits an aura of red lightning which charges up when hitting enemies",
         "rarity": "15",
         "sellValue": "48 Gold Coins",
+        "isMaterial": false,
+        "obtained": [
+            "Crafting"
+        ]
+    },
+    "Ozzathoth": {
+        "damagetype": "Melee",
+        "damage": "90",
+        "knockback": "Average Knockback",
+        "speed": "Average Speed",
+        "isAutoSwing": true,
+        "rarity": "16",
+        "sellValue": "56 Gold Coins",
+        "tooltip": "Fires cosmic orbs that blast nearby enemies with lasers",
         "isMaterial": false,
         "obtained": [
             "Crafting"
@@ -1833,34 +1824,6 @@
             "Crafting"
         ]
     },
-    "Fallen Paladin's Hammer": {
-        "isMaterial": true,
-        "damage": "368",
-        "isAutoSwing": true,
-        "speed": "Snail Speed",
-        "knockback": "Insane Knockback",
-        "damagetype": "Melee",
-        "rarity": "8",
-        "sellValue": "12 Gold Coins",
-        "tooltip": "Throws a heavy, gravity-affected hammer that will return to you after striking an enemy",
-        "obtained": [
-            "Crafting"
-        ]
-    },
-    "Galaxy Smasher": {
-        "isMaterial": true,
-        "damagetype": "Melee",
-        "damage": "1300",
-        "isAutoSwing": true,
-        "speed": "Extremely Slow Speed",
-        "knockback": "Insane Knockback",
-        "tooltip": "Throws a heavy, gravity-affected hammer that will return to you after striking an enemy",
-        "rarity": "14",
-        "sellValue": "40 Gold Coins",
-        "obtained": [
-            "Crafting"
-        ]
-    },
     "Seeking Scorcher": {
         "isAutoSwing": true,
         "damage": "232",
@@ -1871,20 +1834,6 @@
         "rarity": "12",
         "sellValue": "30 Gold Coins",
         "isMaterial": false,
-        "obtained": [
-            "Crafting"
-        ]
-    },
-    "Stellar Contempt": {
-        "isMaterial": true,
-        "damagetype": "Melee",
-        "damage": "650",
-        "knockback": "Insane Knockback",
-        "speed": "Extremely Slow Speed",
-        "isAutoSwing": true,
-        "tooltip": "Throws a heavy, gravity-affected hammer that will return to you after striking an enemy",
-        "rarity": "11",
-        "sellValue": "24 Gold Coins",
         "obtained": [
             "Crafting"
         ]
@@ -1914,7 +1863,7 @@
         "sellValue": "80 Silver Coins",
         "isAutoSwing": true,
         "obtained": [
-            "Chest"
+            "Found"
         ]
     },
     "Urchin Flail": {
@@ -2121,7 +2070,7 @@
         "knockback": "Strong Knockback",
         "rarity": "4",
         "sellValue": "2 Gold 40 Silver Coins",
-        "tooltip": "Right Click to extend the Ark out in front of you",
+        "tooltip": "A worn down and rusty blade once wielded against the evil of this world, ready to be of use once more",
         "speed": "Average Speed",
         "obtained": [
             "Crafting"
@@ -2147,10 +2096,10 @@
         "damage": "60",
         "speed": "Very Slow Speed",
         "knockback": "Strong Knockback",
+        "isAutoSwing": true,
         "tooltip": "Holding Right Click rapidly absorbs energy into the blade until it is charged",
         "rarity": "3",
         "sellValue": "80 Silver Coins",
-        "isAutoSwing": true,
         "obtained": [
             "Dropped"
         ]
@@ -2190,7 +2139,7 @@
         "speed": "Slow Speed",
         "knockback": "Strong Knockback",
         "isAutoSwing": true,
-        "tooltip": "Right Click to extend the Ark out in front of you",
+        "tooltip": "A heavenly blade forged to vanquish all evil",
         "rarity": "8",
         "sellValue": "12 Gold Coins",
         "obtained": [
@@ -2207,6 +2156,20 @@
         "isAutoSwing": true,
         "rarity": "5",
         "sellValue": "4 Gold 80 Silver Coins",
+        "obtained": [
+            "Crafting"
+        ]
+    },
+    "Fallen Paladin's Hammer": {
+        "isMaterial": true,
+        "damage": "368",
+        "isAutoSwing": true,
+        "speed": "Snail Speed",
+        "knockback": "Insane Knockback",
+        "damagetype": "Melee",
+        "rarity": "8",
+        "sellValue": "12 Gold Coins",
+        "tooltip": "Throws a heavy, gravity-affected hammer that will return to you after striking an enemy",
         "obtained": [
             "Crafting"
         ]
@@ -2285,7 +2248,7 @@
         "speed": "Average Speed",
         "knockback": "Extremely Strong Knockback",
         "isAutoSwing": true,
-        "tooltip": "Left Click to perform a 5-swing combo that ends by throwing the blade",
+        "tooltip": "The physical culmination of your journey, capable of rending gods asunder",
         "rarity": "15",
         "sellValue": "48 Gold Coins",
         "isMaterial": false,
@@ -2300,7 +2263,7 @@
         "speed": "Average Speed",
         "knockback": "Very Strong Knockback",
         "isAutoSwing": true,
-        "tooltip": "Left Click to perform a 5-swing combo that ends by throwing the blade",
+        "tooltip": "A heavenly pair of blades infused with the essence of Terraria, powerful enough to cut through the fabric of reality",
         "rarity": "11",
         "sellValue": "24 Gold Coins",
         "obtained": [
@@ -2326,7 +2289,7 @@
         "damage": "1200",
         "speed": "Slow Speed",
         "knockback": "Very Strong Knockback",
-        "tooltip": "Press Right Click to launch a barrage of homing scythes",
+        "tooltip": "You can feel the hands of Death himself onto yours",
         "isAutoSwing": true,
         "rarity": "13",
         "sellValue": "35 Gold Coins",
@@ -2394,13 +2357,27 @@
     "Galaxia": {
         "isMaterial": true,
         "damagetype": "Melee",
-        "damage": "800",
+        "damage": "2800",
         "speed": "Average Speed",
         "knockback": "Very Strong Knockback",
         "isAutoSwing": true,
-        "tooltip": "Freed from earthly shackles and coursing with cosmic power",
+        "tooltip": "{{code|FUNCTION_DESC}}",
         "rarity": "14",
         "sellValue": "28 Gold Coins",
+        "obtained": [
+            "Crafting"
+        ]
+    },
+    "Galaxy Smasher": {
+        "isMaterial": true,
+        "damagetype": "Melee",
+        "damage": "1300",
+        "isAutoSwing": true,
+        "speed": "Extremely Slow Speed",
+        "knockback": "Insane Knockback",
+        "tooltip": "Throws a heavy, gravity-affected hammer that will return to you after striking an enemy",
+        "rarity": "14",
+        "sellValue": "40 Gold Coins",
         "obtained": [
             "Crafting"
         ]
@@ -2443,7 +2420,7 @@
         "sellValue": "40 Gold Coins",
         "isMaterial": false,
         "obtained": [
-            "Chest"
+            "Found"
         ]
     },
     "Neptune's Bounty": {
@@ -2511,6 +2488,20 @@
         "rarity": "14",
         "sellValue": "40 Gold Coins",
         "isMaterial": false,
+        "obtained": [
+            "Crafting"
+        ]
+    },
+    "Stellar Contempt": {
+        "isMaterial": true,
+        "damagetype": "Melee",
+        "damage": "650",
+        "knockback": "Insane Knockback",
+        "speed": "Extremely Slow Speed",
+        "isAutoSwing": true,
+        "tooltip": "Throws a heavy, gravity-affected hammer that will return to you after striking an enemy",
+        "rarity": "11",
+        "sellValue": "24 Gold Coins",
         "obtained": [
             "Crafting"
         ]
@@ -2674,8 +2665,8 @@
         "damage": "20",
         "damagetype": "Ranged",
         "knockback": "Extremely Weak Knockback",
-        "isAutoSwing": true,
         "speed": "Average Speed",
+        "isAutoSwing": true,
         "tooltip": "Fires a stream of leaves",
         "rarity": "7",
         "sellValue": "9 Gold 60 Silver Coins",
@@ -3049,13 +3040,13 @@
     },
     "Arbalest": {
         "damagetype": "Ranged",
+        "damage": "28",
+        "knockback": "Weak Knockback",
+        "speed": "Average Speed",
+        "isAutoSwing": true,
+        "tooltip": "Fires a volley of 6 high-speed arrows",
         "rarity": "5",
         "sellValue": "4 Gold 80 Silver Coins",
-        "damage": "28",
-        "speed": "Average Speed",
-        "knockback": "Weak Knockback",
-        "tooltip": "Fires a volley of 6 high-speed arrows",
-        "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
             "Dropped"
@@ -3128,7 +3119,7 @@
         "rarity": "3",
         "sellValue": "80 Silver Coins",
         "obtained": [
-            "Chest"
+            "Found"
         ]
     },
     "Bullet-Filled Shotgun": {
@@ -3239,20 +3230,6 @@
         "isAutoSwing": true,
         "speed": "Average Speed",
         "tooltip": "Converts musket balls into homing astral rounds",
-        "isMaterial": false,
-        "obtained": [
-            "Crafting"
-        ]
-    },
-    "Butcher (weapon)": {
-        "tooltip": "Fires bullets faster and more accurately the longer you hold the trigger",
-        "damage": "15",
-        "speed": "Extremely Slow Speed",
-        "rarity": "4",
-        "sellValue": "2 Gold 40 Silver Coins",
-        "knockback": "Extremely Weak Knockback",
-        "damagetype": "Ranged",
-        "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
             "Crafting"
@@ -3642,22 +3619,8 @@
         "knockback": "Average Knockback",
         "speed": "Very Slow Speed",
         "tooltip": "Fires a tight spread of bullets that call a great number of bullets from the sky",
-        "rarity": "10",
+        "rarity": "11",
         "sellValue": "24 Gold Coins",
-        "obtained": [
-            "Crafting"
-        ]
-    },
-    "Dodu's Handcannon": {
-        "damagetype": "Ranged",
-        "damage": "1020",
-        "speed": "Very Slow Speed",
-        "knockback": "Average Knockback",
-        "tooltip": "Fires high explosive peanut shells, literally",
-        "rarity": "13",
-        "isAutoSwing": true,
-        "sellValue": "35 Gold Coins",
-        "isMaterial": false,
         "obtained": [
             "Crafting"
         ]
@@ -3860,7 +3823,7 @@
         "damage": "777",
         "knockback": "Very Strong Knockback",
         "speed": "Very Slow Speed",
-        "tooltip": "Press Left Click to consume 1 coin and play a slot machine",
+        "tooltip": "'A gun given to a great gunslinger forged by the arms of a man given no name'",
         "isAutoSwing": true,
         "rarity": "12",
         "sellValue": "30 Gold Coins",
@@ -4265,11 +4228,11 @@
         "damagetype": "Ranged",
         "damage": "29",
         "knockback": "Extremely Weak Knockback",
+        "speed": "Very Slow Speed",
+        "isAutoSwing": true,
+        "tooltip": "Cooks your foes to purrfection with catty smoke",
         "rarity": "4",
         "sellValue": "2 Gold 40 Silver Coins",
-        "isAutoSwing": true,
-        "speed": "Very Slow Speed",
-        "tooltip": "Cooks your foes to purrfection with catty smoke",
         "obtained": [
             "Dropped"
         ]
@@ -4564,6 +4527,20 @@
             "Crafting"
         ]
     },
+    "Buzzkill": {
+        "isMaterial": true,
+        "tooltip": "Hold Left Click to rev up a buzzsaw that deals close-range damage",
+        "damage": "56",
+        "speed": "Very Slow Speed",
+        "rarity": "4",
+        "sellValue": "2 Gold 40 Silver Coins",
+        "knockback": "Extremely Weak Knockback",
+        "damagetype": "Ranged",
+        "isAutoSwing": true,
+        "obtained": [
+            "Crafting"
+        ]
+    },
     "Gauss Rifle": {
         "damagetype": "Ranged",
         "damage": "150",
@@ -4723,23 +4700,9 @@
         "damage": "1675",
         "knockback": "Average Knockback",
         "speed": "Snail Speed",
-        "tooltip": "Press Left Click to charge up 5 rapid-fire plasma beams",
+        "tooltip": "'Welcome to the party, pal'",
         "rarity": "14",
         "sellValue": "40 Gold Coins",
-        "isMaterial": false,
-        "obtained": [
-            "Crafting"
-        ]
-    },
-    "Elemental Blaster": {
-        "damagetype": "Ranged",
-        "damage": "67",
-        "knockback": "Very Weak Knockback",
-        "rarity": "11",
-        "sellValue": "24 Gold Coins",
-        "isAutoSwing": true,
-        "speed": "Very Fast Speed",
-        "tooltip": "Fires a storm of rainbow blasts",
         "isMaterial": false,
         "obtained": [
             "Crafting"
@@ -4882,6 +4845,20 @@
         "isMaterial": false,
         "obtained": [
             "Dropped"
+        ]
+    },
+    "Superradiant Slaughterer": {
+        "damagetype": "Ranged",
+        "damage": "127",
+        "knockback": "Very Weak Knockback",
+        "rarity": "11",
+        "sellValue": "24 Gold Coins",
+        "isAutoSwing": true,
+        "speed": "Very Slow Speed",
+        "tooltip": "Hold Left Click to rev up an elemental buzzsaw that deals close-range damage",
+        "isMaterial": false,
+        "obtained": [
+            "Crafting"
         ]
     },
     "Aquamarine Staff": {
@@ -5033,6 +5010,7 @@
         "tooltip": "Fires a spray of evil clouds and rain",
         "rarity": "3",
         "sellValue": "80 Silver Coins",
+        "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
             "Dropped",
@@ -5185,7 +5163,6 @@
         "knockback": "Extremely Strong Knockback",
         "tooltip": "Casts a meteor star for the player to ride in the direction of the cursor",
         "speed": "Very Slow Speed",
-        "isAutoSwing": true,
         "rarity": "4",
         "sellValue": "2 Gold 40 Silver Coins",
         "isMaterial": false,
@@ -5320,7 +5297,6 @@
         ]
     },
     "Undine's Retribution": {
-        "isMaterial": true,
         "damagetype": "Magic",
         "damage": "46",
         "knockback": "Weak Knockback",
@@ -5329,6 +5305,7 @@
         "isAutoSwing": true,
         "rarity": "7",
         "sellValue": "9 Gold 60 Silver Coins",
+        "isMaterial": false,
         "obtained": [
             "Crafting"
         ]
@@ -5417,20 +5394,6 @@
             "Dropped"
         ]
     },
-    "Divine Retribution": {
-        "damagetype": "Magic",
-        "damage": "48",
-        "knockback": "Weak Knockback",
-        "speed": "Fast Speed",
-        "isAutoSwing": true,
-        "tooltip": "Mage is superior to rogue; look, we got a donor weapon to prove it!",
-        "rarity": "12",
-        "sellValue": "30 Gold Coins",
-        "isMaterial": false,
-        "obtained": [
-            "Crafting"
-        ]
-    },
     "Eidolon Staff": {
         "isAutoSwing": true,
         "damagetype": "Magic",
@@ -5455,20 +5418,6 @@
         "knockback": "Very Strong Knockback",
         "tooltip": "Casts four celestial beams near the player",
         "isAutoSwing": true,
-        "obtained": [
-            "Crafting"
-        ]
-    },
-    "Fabstaff": {
-        "damage": "125",
-        "damagetype": "Magic",
-        "knockback": "Average Knockback",
-        "speed": "Average Speed",
-        "isAutoSwing": true,
-        "tooltip": "Casts a bouncing beam that splits when enemies are near it",
-        "rarity": "16",
-        "sellValue": "56 Gold Coins",
-        "isMaterial": false,
         "obtained": [
             "Crafting"
         ]
@@ -5653,11 +5602,25 @@
             "Crafting"
         ]
     },
+    "Sylvestaff": {
+        "damage": "125",
+        "damagetype": "Magic",
+        "knockback": "Average Knockback",
+        "speed": "Average Speed",
+        "isAutoSwing": true,
+        "tooltip": "Casts a bouncing beam that splits when enemies are near it",
+        "rarity": "16",
+        "sellValue": "56 Gold Coins",
+        "isMaterial": false,
+        "obtained": [
+            "Crafting"
+        ]
+    },
     "Teslastaff": {
         "damagetype": "Magic",
         "damage": "166",
-        "speed": "Fast Speed",
         "knockback": "No Knockback",
+        "speed": "Fast Speed",
         "tooltip": "Fires a channeled beam of pinpoint-accurate lightning",
         "rarity": "12",
         "sellValue": "30 Gold Coins",
@@ -6053,7 +6016,7 @@
         "knockback": "Extremely Weak Knockback",
         "tooltip": "Fire an array of lasers that decreases in spread for each shot",
         "rarity": "11",
-        "sellValue": "20 Gold Coins",
+        "sellValue": "24 Gold Coins",
         "obtained": [
             "Crafting"
         ]
@@ -6495,12 +6458,12 @@
     "Winter's Fury": {
         "damage": "70",
         "damagetype": "Magic",
-        "tooltip": "Fires a stream of ice orbs and a barrage of ice shards towards the cursor",
-        "speed": "Fast Speed",
         "knockback": "Average Knockback",
+        "speed": "Fast Speed",
+        "isAutoSwing": true,
+        "tooltip": "Fires a stream of ice orbs and a barrage of ice shards towards the cursor",
         "rarity": "8",
         "sellValue": "12 Gold Coins",
-        "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
             "Buy"
@@ -6726,7 +6689,7 @@
         "sellValue": "80 Silver Coins",
         "isAutoSwing": true,
         "obtained": [
-            "Chest"
+            "Found"
         ]
     },
     "The Cauldron": {
@@ -6736,7 +6699,7 @@
         "speed": "Snail Speed",
         "tooltip": "Launches lava bombs which explode into more lava bombs",
         "rarity": "3",
-        "sellValue": "80 Gold Coins",
+        "sellValue": "80 Silver Coins",
         "isMaterial": false,
         "obtained": [
             "Crafting"
@@ -7128,7 +7091,7 @@
         "tooltip": "Summons a school of herrings to fight for you",
         "isMaterial": false,
         "obtained": [
-            "Chest"
+            "Found"
         ]
     },
     "Puff Shroom": {
@@ -7841,6 +7804,7 @@
         "tooltip": "Summons five ancient weapons to annihilate your enemies",
         "rarity": "14",
         "sellValue": "40 Gold Coins",
+        "isAutoSwing": true,
         "isMaterial": false,
         "obtained": [
             "Crafting"
@@ -8105,7 +8069,7 @@
         "tooltip": "Summons a long-abandoned drone to support you",
         "isMaterial": false,
         "obtained": [
-            "Chest",
+            "Found",
             "Crafting"
         ]
     },
@@ -8224,8 +8188,8 @@
     "Atlas Munitions Beacon": {
         "damagetype": "Summon",
         "damage": "200",
-        "speed": "Fast Speed",
         "knockback": "Average Knockback",
+        "speed": "Fast Speed",
         "tooltip": "Brings forth an exo-powered, stationary cannon",
         "isAutoSwing": true,
         "rarity": "15",
@@ -9504,13 +9468,13 @@
     },
     "Utensil Poker": {
         "isMaterial": true,
-        "damage": "333",
-        "isAutoSwing": true,
-        "speed": "Extremely Slow Speed",
-        "knockback": "Very Strong Knockback",
         "damagetype": "Rogue",
-        "rarity": "10",
+        "damage": "333",
+        "knockback": "Very Strong Knockback",
+        "speed": "Extremely Slow Speed",
+        "isAutoSwing": true,
         "tooltip": "Fires utensils in bursts of three",
+        "rarity": "10",
         "sellValue": "20 Gold Coins",
         "obtained": [
             "Dropped"
@@ -9849,20 +9813,6 @@
             "Crafting"
         ]
     },
-    "Sludge Splotch": {
-        "damage": "48",
-        "damagetype": "Rogue",
-        "rarity": "2",
-        "sellValue": "40 Bronze Coins",
-        "knockback": "Extremely Weak Knockback",
-        "speed": "Average Speed",
-        "isAutoSwing": true,
-        "tooltip": "Stealth strikes cause the main ball of sludge to split on hit, inflicting more damage",
-        "isMaterial": false,
-        "obtained": [
-            "Crafting"
-        ]
-    },
     "Sticky Spiky Ball": {
         "damage": "10",
         "speed": "Average Speed",
@@ -10026,7 +9976,7 @@
         "sellValue": "80 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Chest"
+            "Found"
         ]
     },
     "Rot Ball": {
@@ -10056,6 +10006,20 @@
         "isMaterial": false,
         "obtained": [
             "Buy"
+        ]
+    },
+    "Sludge Splotch": {
+        "damage": "48",
+        "damagetype": "Rogue",
+        "rarity": "2",
+        "sellValue": "40 Bronze Coins",
+        "knockback": "Extremely Weak Knockback",
+        "speed": "Average Speed",
+        "isAutoSwing": true,
+        "tooltip": "Stealth strikes cause the main ball of sludge to split on hit, inflicting more damage",
+        "isMaterial": false,
+        "obtained": [
+            "Crafting"
         ]
     },
     "Snap Clam": {
@@ -10187,12 +10151,12 @@
     "Duke's Decapitator": {
         "damage": "90",
         "damagetype": "Rogue",
-        "rarity": "8",
-        "sellValue": "12 Gold Coins",
         "knockback": "Very Weak Knockback",
-        "speed": "Slow Speed",
+        "speed": "Very Slow Speed",
         "isAutoSwing": true,
         "tooltip": "Throws a hydro axe which shreds enemies when it comes into contact with them",
+        "rarity": "8",
+        "sellValue": "12 Gold Coins",
         "isMaterial": false,
         "obtained": [
             "Dropped"
@@ -10265,7 +10229,7 @@
         "sellValue": "9 Gold 60 Silver Coins",
         "isMaterial": false,
         "obtained": [
-            "Chest"
+            "Found"
         ]
     },
     "Ice Star": {
