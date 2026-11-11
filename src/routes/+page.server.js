@@ -1,5 +1,5 @@
-import { BASENUMBER, MNUMBER, ANUMBER } from "$env/static/private"
-import weapons from "$lib/data/weapons.json"
+import { BASENUMBER, MNUMBER, ANUMBER } from "$app/env/private"
+import weapons from "#lib/data/weapons.json"
 
 export async function load(){
     const c = parseInt(BASENUMBER) / 1000
@@ -7,7 +7,6 @@ export async function load(){
     let num = ((day * parseFloat(ANUMBER) + c) % parseFloat(MNUMBER))
     num = Math.round(num * 100000)
     num = num % Object.keys(weapons).length == 0 ? num : num % Object.keys(weapons).length
-    
 
     return { weaponIndex: num, weapons: weapons, day: day}
 }

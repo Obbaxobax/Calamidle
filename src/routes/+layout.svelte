@@ -1,13 +1,10 @@
 <script>
     import "../app.pcss";
-    import { inject } from '@vercel/analytics'
     import { slide } from "svelte/transition"
-    import Bosses from "$lib/bosses/bosses.svelte";
+    import Bosses from "#lib/bosses/bosses.svelte";
 
     let disabled = true
     let weaponsPage = true
-
-    inject()
 </script>
 
 <div class="min-h-screen h-full w-full flex bg-black/30 backdrop-blur-sm overflow-hidden">
